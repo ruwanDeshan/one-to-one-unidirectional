@@ -2,7 +2,7 @@ package entity;
 
 import javax.persistence.*;
 
-@Entity(name = "laptop_id")
+@Entity(name = "laptop_table")
 public class Laptop {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -11,8 +11,7 @@ public class Laptop {
 
     private String brand;
 
-    public Laptop(long laptopId) {
-        this.laptopId = laptopId;
+    public Laptop() {
     }
 
     public Laptop(long laptopId, String brand) {
